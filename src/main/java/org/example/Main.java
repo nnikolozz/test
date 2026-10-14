@@ -218,14 +218,163 @@ public class Main {
 //        ++number;
 //        System.out.println(number);
 
+//
+//
+//        int a = 10;
+//        double b = a;
+//
+//        float c = 5.5f;
+//        double d = c;
+//        System.out.println(d);
 
 
-        int a = 10;
-        double b = a;
+//
+//        String[] names = new String[3];
+////
+////        System.out.println(names[0]);
+////        System.out.println(names[1]);
+//        for(String namesd :names ){
+//            System.out.println(namesd);
+//        }
 
-        float c = 5.5f;
-        double d = c;
-        System.out.println(d);
+//        int[] numbers = {1, 2, 3, 4};
+//        for (int c = 0; c < 5; c++) {
+//            int[] numbers = {1, 2, 3, 4};
+//            for (int i = 0; i < numbers.length; i++) {
+//                numbers[i] = numbers[i] * 2;
+//            }
+//            System.out.println(java.util.Arrays.toString(numbers));
+//        }
 
+//        int[] numbers = {1, 2, 3, 4};
+//        int sum = 0;
+//        for (int number : numbers) {
+//            sum += number;
+//        }
+//        System.out.println("Sum: " + sum);
+
+//        int [] [] matrix = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8, 9}
+//        };
+//        for ( int [] row : matrix ) {
+//            for ( int element : row ) {
+//                System.out.print( element + " " );
+//            }
+//            System.out.println();
+//        }
+
+//        int [] [] matrix = {
+//                {1, 2, 3},
+//                {4, 5},
+//                {7, 8, 9}
+//        };
+
+//        for(int i = 0;i < matrix.length;i++){
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                System.out.print(matrix[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+//        int [] nums = {1,2,3,5};
+//        int [] nums2 = Arrays.copyOf(nums, nums.length);
+//        nums2[3] = 102;
+//        System.out.println(Arrays.toString(nums));
+//        System.out.println(Arrays.toString(nums2));
+
+//        int [] nums = {1,2,3};
+//    for(int x : nums) {
+//        x= 9;
+//        System.out.println(Arrays.toString(new int[]{x}));
+//    }
+//
+//        int[] nums = {7, 5, 192, 28, 12, 2, 3, 1};
+//        Arrays.sort(nums);
+//        for (int i = nums.length - 1; i >= 0; i--) {
+//            System.out.println(nums[i]);
+//        }
+//        int [] nums = {1,2,3};
+//        int [] nums2 = {1,2,3};
+//        if(Arrays.equals(nums, nums2)) {
+//            System.out.println("The arrays are equal.");
+//        } else {
+//            System.out.println("The arrays are not equal.");
+//        }
+//        System.out.println(Arrays.toString(nums));
+//        System.out.println(Arrays.toString(nums2));
+
+
+//        int [] nums = {1,2,3,9,10,12,14};
+//        int sum = 0;
+//        for(int i = 0;i < nums.length;i++){
+//            sum += nums[i];
+//        }
+//        double sashualo = (double) sum / nums.length;
+//        System.out.println("Sum: " + sum);
+//        System.out.println("Average: " + sashualo);
+
+//        int [] nums = {1,2,3,9,10,12,14};
+//        int max = nums[0];
+//        for(int i = 0;i < nums.length;i++){
+//            if(nums[i] > max){
+//                max = nums[i];
+//            }
+//        }
+//        System.out.println("Max: " + max);
+
+//        int [] nums = {1,2,3,9,10,12,14};
+//        int min = nums[0];
+//        for(int i = 0;i < nums.length;i++){
+//            if(nums[i] < min){
+//                min = nums[i];
+//            }
+//        }
+//        System.out.println("Min: " + min);
+
+//        int [] nums = {1,2,3,9,10,12,14,90,98,87,74,24,20,14,100,102,104};
+//        int evennumbers = 0;
+//        for(int i = 0;i < nums.length;i++){
+//            if(nums[i] % 2 == 0){
+//                evennumbers++;
+//            }
+//        }
+//        System.out.println("Even numbers: " + evennumbers);
+
+
+//        int [] nums = {-1,-2,-3,9,10,12,14,90,98,87,74,24,20,0,0,0,0};
+//        int positiveNumbers = 0;
+//        int negativeNumbers = 0;
+//        int zeroNumbers = 0;
+//
+//        for(int i = 0;i < nums.length;i++){
+//            if(nums[i] > 0){
+//                positiveNumbers++;
+//            } else if(nums[i] < 0){
+//                negativeNumbers++;
+//            } else {
+//                zeroNumbers++;
+//            }
+//        }
+//        System.out.println("Positive numbers: " + positiveNumbers);
+//        System.out.println("Negative numbers: " + negativeNumbers);
+//        System.out.println("Zero numbers: " + zeroNumbers);
+
+//        int [] nums = {-1,-2,-3,9,10,12,14,90,98,87,74,24,20,0,0,0,0};
+//        Arrays.sort(nums);
+//        for (int i = nums.length - 1; i >= 0; i--) {
+//            System.out.println(nums[i]);
+//        }
+
+        int [] nums = {-1,-2,-3,9,10,12,14,90,98,87,74,24,20,0,0,0,0};
+        int [] reversednums = new int[nums.length];
+        int j = 0;
+        for(int i = nums.length - 1;i >= 0;i--){
+            reversednums[j] = nums[i];
+            j++;
+        }
+        System.out.println("Reversed array: " + Arrays.toString(reversednums));
+        System.out.println("Reversed array: " + Arrays.toString(nums));
     }
+
 }
